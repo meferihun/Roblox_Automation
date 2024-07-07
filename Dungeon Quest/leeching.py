@@ -35,10 +35,10 @@ while True:
 
     if recognizeRetryColor(retry, width, height) and recognizeBossColor(boss, width, height):
         pyautogui.moveTo(boss_pos[0][0]+5, boss_pos[0][1]+5, 1)
-        pyautogui.sleep(1)
+        pyautogui.sleep(2)
         pyautogui.click(clicks=4, interval=0.5)
 
     elif recognizeRetryColor(retry, width, height) and not recognizeBossColor(boss, width, height):
         pyautogui.moveTo(retry_pos[0][0]+5, retry_pos[0][1]+5, 1)
-        pyautogui.sleep(1)
-        pyautogui.click(clicks=4, interval=1)
+        pyautogui.sleep(2)
+        pyautogui.click(clicks=4, interval=0.5)
